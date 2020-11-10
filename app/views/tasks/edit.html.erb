@@ -1,0 +1,13 @@
+<div class="container">
+
+<%= simple_form_for(@task) do |f| %>
+  <%= f.input :title %>
+  <%= f.input :details %>
+  <%= f.label :completed %>
+  <%= f.check_box :completed %>
+  <br>
+  <%= f.button :submit, "Update Task", class:"btn btn-primary" %>
+<% end %>
+<br>
+<%= link_to 'Back to list', tasks_path %>
+</div>
